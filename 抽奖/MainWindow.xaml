@@ -1,0 +1,26 @@
+﻿<Window x:Class="抽奖.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:抽奖"
+        mc:Ignorable="d"
+        Title="Hmmm。" Height="206" Width="492">
+    <Grid Margin="0,0,0,1">
+        <Button x:Name="StarButton" Content="发车" HorizontalAlignment="Left" Margin="255,10,0,0" VerticalAlignment="Top" Width="218" Height="97" Click="StarButton_Click" FontSize="48"/>
+        <TextBox x:Name="ClassNumberCountInPut" HorizontalAlignment="Left" Height="23" Margin="255,132,0,0" TextWrapping="Wrap" Text="42" VerticalAlignment="Top" Width="218"/>
+        <TextBlock x:Name="ClassNumberCount" HorizontalAlignment="Left" Margin="255,112,0,0" TextWrapping="Wrap" Text="班级总人数" VerticalAlignment="Top" Height="23" Width="66"/>
+        <TextBlock x:Name="NunShow" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="162" Width="240" FontSize="72"/>
+        <Image x:Name="iven_jpg" Margin="10,177,0,0" Source="iven.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Height="203" VerticalAlignment="Top" HorizontalAlignment="Left" Width="202">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.374"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.743"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+    </Grid>
+</Window>
